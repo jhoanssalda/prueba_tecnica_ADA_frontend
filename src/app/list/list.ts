@@ -37,8 +37,4 @@ export class List {
     this.dataSource = this.service.getData();
   }
 
-  applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value;
-    this.dataSource.filter = filterValue.trim().toLowerCase();
-  }
 }
